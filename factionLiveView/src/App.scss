@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.faction-leaderboard{
+  display: inline-block;
+  width: 100%;
+  text-align:center;
+}
+
+.faction-box-vertical{
+  padding: 15px;
+  height: 80px;
+  display: block;
+}
+
+.faction-box-horizontal{
+  padding: 15px;
+  margin: auto;
+  height: 80px;
+  display: inline-block;
+}
+
+.faction-box-horizontal div{
+  display: inline-block;
+}
+
+.faction-box-vertical div{
+  display: inline-block;
+}
+
+.faction-total{
+  font-family: LinBiolinum;
+  font-size: 75px;
+  text-align: left;
+  height: 100%;
+  display: inline-block;
+  color: #fcfeff;
+  text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  vertical-align: bottom;
+}
+
+.faction-img{
+  float: left;
+}

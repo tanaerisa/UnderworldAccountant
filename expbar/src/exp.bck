@@ -1,0 +1,49 @@
+import './exp.css';
+/*import React, { useEffect } from 'react';
+import io from "socket.io-client";
+
+const socket = io('/', {
+  transports: ['websocket'],
+  path: '/socket',
+});
+*/
+
+var i=50;
+
+var divStyle = {
+  width: i+"%"
+};
+
+console.log(i)
+ 
+function App() {
+
+  /*
+  useEffect(() => {
+    socket.on('connection', () => {
+      console.log('Socket connected...')
+    });
+  },[]);
+
+  useEffect(() => {
+    socket.on('update', message => {
+      console.log(message);
+    });
+  }, [])
+  */
+ 
+  
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h2>Exp Bar - Proof of Concept</h2>
+      </header>
+      <div className="exp-background">
+        <div className="exp-bar" style={divStyle}></div>
+        <div className="exp-foreground"></div>
+      </div>
+    </div>
+  );
+}
+
+export default App;

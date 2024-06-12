@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'LinBiolinumO';
+  src: url('LinBiolinumO.woff2') format('woff2'),
+      url('LinBiolinumO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ExpBar {
+  font-family: 'LinBiolinumO';
+  background-color: #000;
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  height:100vh;
+  width:100vw;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.full-bar{
+  position:relative;
+  display:block;
+}
+
+.exp-level{
+  position:relative;
+  display:block;
+  top:5vw;
+  left:5vw;
+  color:#fff;
+  background-image: radial-gradient(circle at 100% 100%, transparent 0px, #ffffff 0px, #ffffff 1px, transparent 1px), 
+  linear-gradient(to right, #ffffffff, #ffffffff), 
+  radial-gradient(circle at 0% 100%, transparent 0px, #ffffff 0px, #ffffff00 1px, transparent 1px), 
+  linear-gradient(to bottom, #ffffffff, #ffffffff), 
+  radial-gradient(circle at 0% 0%, transparent 0px, #ffffff 0px, #ffffff00 1px, transparent 1px), 
+  linear-gradient(to left, #ffffffaa, #ffffff00), 
+  radial-gradient(circle at 100% 0%, transparent 0px, #ffffff 0px, #ffffff00 1px, transparent 1px), 
+  linear-gradient(to top, #ffffff00, #ffffffaa);
+  background-size: 1px 1px, calc(100% - 2px) 1px, 1px 1px, 1px calc(100% - 2px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+  float:left;
+  width:12vw;
+  height:12vw;
+  font-size:11vw;
+  text-align:center;
+  line-height:10vw;
+  transform: rotateZ(-45deg)
+}
+
+.exp-level .content{
+  display:block;
+  width:12vw;
+  height:12vw;
+  margin-top:.5vw;
+  margin-left:-.5vw;
+  transform: rotateZ(45deg)
+}
+
+.exp-background{
+  background: #ffffffaa;
+  position: relative;
+  width: 78vw;
+  height: 40vh;
+  top: 11vw;
+  left: 19.5vw;
+  padding: 0px;
+  max-height: 10px;
+  transform: skew(-45deg) rotateZ(0deg);
+}
+.exp-bar{
+  position:relative;
+  height: calc(100%);
+  max-height:10px;
+  background: #7E0036;
+  margin:0;
+  transition: width 1s, background 1s;
+}
+
+.exp-foreground{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background: rgba(0,0,0,.2);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

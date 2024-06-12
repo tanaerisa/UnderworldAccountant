@@ -1,0 +1,22 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# os/ide
+.DS_Store
+*.swp
+
+# debug
+*.log*
+
+# env
+.env
